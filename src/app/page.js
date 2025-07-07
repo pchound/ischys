@@ -10,6 +10,7 @@ export default function Home() {
         >
             <Navbar />
             <Video />
+            <br></br>
             <Section1 />
         </main>
     );
