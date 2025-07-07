@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Navbar from "./global-components/Navbar";
 import Video from "./home-components/Video";
+import Section1 from "./home-components/Section1";
 
 export default function Home() {
     return (
@@ -9,12 +10,7 @@ export default function Home() {
         >
             <Navbar />
             <Video />
-
-
-            <div className="bg-gradient-to-b from-[#f5deb3] to-[#d2b48c] p-10 text-center text-black">
-                Hello
-            </div>
-
+            <Section1 />
         </main>
     );
 }
