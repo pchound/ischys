@@ -1,7 +1,7 @@
-import Image from "next/image";
 import Navbar from "./global-components/Navbar";
 import Video from "./home-components/Video";
 import Section1 from "./home-components/Section1";
+import Footer from "./global-components/Footer";
 
 export default function Home() {
     return (
@@ -12,6 +12,8 @@ export default function Home() {
             <Video />
             <br></br>
             <Section1 />
+            <br></br>
+            <Footer />
         </main>
     );
 }

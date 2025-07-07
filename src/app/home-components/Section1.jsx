@@ -1,27 +1,45 @@
 'use client';
-import { useState, useEffect } from 'react';
-import Link from 'next/link';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Image from 'next/image';
 
 const Section1 = () => {
+    useEffect(() => {
+        AOS.init({ once: false });
+    }, []);
+
     return (
-        <div className="bg-radial from-[#f4e2d8] to-[#ebc295] py-12 px-8">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-8 max-w-screen-xl mx-auto">
-                {/* Text on the left */}
-                <div className="md:w-1/2 text-center md:text-left">
-                    <h1 className="text-black text-3xl md:text-4xl font-bold drop-shadow-xl">
+        <div className="bg-[radial-gradient(circle_at_center,_#f5deb3,_#f5f5dc)] py-16 px-6">
+            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                {/* Text Section */}
+                <div data-aos="fade-right" data-aos-duration="800">
+                    <h1 className="text-black text-3xl md:text-4xl font-bold drop-shadow-xl mb-4">
                         1 in 4 teens suffer from depression
                     </h1>
+                    <p className="text-lg text-gray-800">
+                        Depression in adolescence is rising, and early support makes all the difference.
+                    </p>
+
+                    <div className="mt-6 flex justify-center">
+                        <button className="bg-white text-black font-semibold py-2 px-6 rounded-xl shadow hover:bg-gray-100 transition cursor-pointer">
+                            Learn more
+                        </button>
+                    </div>
+
+
                 </div>
 
-                {/* Image on the right */}
-                <div className="md:w-1/2">
+
+
+                {/* Image Section */}
+                <div data-aos="zoom-in" data-aos-duration="1000" className="flex justify-center">
                     <Image
-                        src="/images/sad-teen.jpg"
-                        alt="Descriptive alt text"
-                        width={600}
+                        src="/sad-teen.jpg"
+                        alt="Sad teen"
+                        width={400}
                         height={400}
-                        className="rounded-lg shadow-lg mx-auto md:mx-0"
+                        className="rounded-xl shadow-xl"
                     />
                 </div>
             </div>
