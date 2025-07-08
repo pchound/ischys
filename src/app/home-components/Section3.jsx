@@ -9,9 +9,22 @@ const Section3 = () => {
         AOS.init({ once: true });
     }, []);
 
+
+    useEffect(() => {
+        const link = document.createElement('link');
+        link.href =
+            'https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@200&display=swap';
+        link.rel = 'stylesheet';
+        document.head.appendChild(link);
+    }, []);
+
     return (
-        <div className="bg-[radial-gradient(circle_at_center,_#9fd5ff,_#d3ffff)] py-16 px-6">
-            <h1 className="text-black text-3xl md:text-4xl font-bold drop-shadow-xl mb-4 text-center pb-10" >
+
+
+
+        <div className="text-[#2a4c5b] bg-[radial-gradient(circle_at_center,_#9fd5ff,_#d3ffff)] py-16 px-6" style={{ fontFamily: '"Source Serif 4", serif', fontWeight: 200 }}
+        >
+            <h1 className="text-3xl md:text-4xl font-bold drop-shadow-xl mb-4 text-center pb-10" >
                 At Ischys Wellness, we can help with:
             </h1>
 
@@ -20,7 +33,7 @@ const Section3 = () => {
 
                 {/*Section 1 */}
                 <div>
-                    <h1 className="text-black text-3xl md:text-3xl font-bold drop-shadow-xl mb-4 text-center">
+                    <h1 className="text-3xl md:text-3xl font-bold drop-shadow-xl mb-4 text-center">
                         Anxiety
                     </h1>
 
@@ -29,7 +42,7 @@ const Section3 = () => {
                         alt="Anxiety Scribble"
                         width={200}
                         height={200}
-                        className="mx-auto opacity-40"
+                        className="mx-auto"
                     />
                 </div>
 
@@ -37,7 +50,7 @@ const Section3 = () => {
 
                 {/*Section 2 */}
                 <div>
-                    <h1 className="text-black text-3xl md:text-3xl font-bold drop-shadow-xl mb-4 text-center">
+                    <h1 className="text-3xl md:text-3xl font-bold drop-shadow-xl mb-4 text-center">
                         Depression
                     </h1>
 
@@ -46,14 +59,14 @@ const Section3 = () => {
                         alt="Cloud"
                         width={200}
                         height={200}
-                        className="mx-auto opacity-50"
+                        className="mx-auto"
                     />
                 </div>
 
 
                 {/*Section 3 */}
                 <div>
-                    <h1 className="text-black text-3xl md:text-3xl font-bold drop-shadow-xl mb-4 text-center">
+                    <h1 className="text-3xl md:text-3xl font-bold drop-shadow-xl mb-4 text-center">
                         Relationships
                     </h1>
 
@@ -62,13 +75,13 @@ const Section3 = () => {
                         alt="Cloud"
                         width={200}
                         height={200}
-                        className="mx-auto opacity-50"
+                        className="mx-auto"
                     />
                 </div>
 
                 {/*Section 4 */}
                 <div>
-                    <h1 className="text-black text-3xl md:text-3xl font-bold drop-shadow-xl mb-4 text-center">
+                    <h1 className="text-3xl md:text-3xl font-bold drop-shadow-xl mb-4 text-center">
                         Addiction
                     </h1>
 
@@ -77,7 +90,7 @@ const Section3 = () => {
                         alt="Addiction ball & chain"
                         width={200}
                         height={200}
-                        className="mx-auto opacity-50"
+                        className="mx-auto"
                     />
                 </div>
             </div>
