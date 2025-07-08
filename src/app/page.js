@@ -1,6 +1,8 @@
-import Navbar from "./global-components/Navbar";
+import Header from "./global-components/Header";
 import Video from "./home-components/Video";
-import Section1 from "./home-components/Section1";
+import TeenDepression from "./home-components/teen-depression";
+import Section2 from "./home-components/Section2";
+import Section3 from "./home-components/Section3";
 import Footer from "./global-components/Footer";
 
 export default function Home() {
@@ -8,10 +10,14 @@ export default function Home() {
         <main
             className="flex min-h-screen flex-col bg-white bg-no-repeat"
         >
-            <Navbar />
+            <Header />
             <Video />
             <br></br>
-            <Section1 />
+            <Section2 />
+            <br></br>
+            <Section3 />
+            <br></br>
+            <TeenDepression />
             <br></br>
             <Footer />
         </main>

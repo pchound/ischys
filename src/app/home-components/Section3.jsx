@@ -1,0 +1,88 @@
+'use client';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Image from 'next/image';
+
+const Section3 = () => {
+    useEffect(() => {
+        AOS.init({ once: true });
+    }, []);
+
+    return (
+        <div className="bg-[radial-gradient(circle_at_center,_#9fd5ff,_#d3ffff)] py-16 px-6">
+            <h1 className="text-black text-3xl md:text-4xl font-bold drop-shadow-xl mb-4 text-center pb-10" >
+                At Ischys Wellness, we can help with:
+            </h1>
+
+            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 items-center">
+
+
+                {/*Section 1 */}
+                <div>
+                    <h1 className="text-black text-3xl md:text-3xl font-bold drop-shadow-xl mb-4 text-center">
+                        Anxiety
+                    </h1>
+
+                    <Image
+                        src="/anxiety-scribble.png"
+                        alt="Anxiety Scribble"
+                        width={200}
+                        height={200}
+                        className="mx-auto opacity-40"
+                    />
+                </div>
+
+
+
+                {/*Section 2 */}
+                <div>
+                    <h1 className="text-black text-3xl md:text-3xl font-bold drop-shadow-xl mb-4 text-center">
+                        Depression
+                    </h1>
+
+                    <Image
+                        src="/depression-cloud.png"
+                        alt="Cloud"
+                        width={200}
+                        height={200}
+                        className="mx-auto opacity-50"
+                    />
+                </div>
+
+
+                {/*Section 3 */}
+                <div>
+                    <h1 className="text-black text-3xl md:text-3xl font-bold drop-shadow-xl mb-4 text-center">
+                        Relationships
+                    </h1>
+
+                    <Image
+                        src="/relationships.png"
+                        alt="Cloud"
+                        width={200}
+                        height={200}
+                        className="mx-auto opacity-50"
+                    />
+                </div>
+
+                {/*Section 4 */}
+                <div>
+                    <h1 className="text-black text-3xl md:text-3xl font-bold drop-shadow-xl mb-4 text-center">
+                        Addiction
+                    </h1>
+
+                    <Image
+                        src="/addiction.png"
+                        alt="Addiction ball & chain"
+                        width={200}
+                        height={200}
+                        className="mx-auto opacity-50"
+                    />
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Section3;

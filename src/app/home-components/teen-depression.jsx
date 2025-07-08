@@ -26,8 +26,6 @@ const Section1 = () => {
                             Learn more
                         </button>
                     </div>
-
-
                 </div>
 
 

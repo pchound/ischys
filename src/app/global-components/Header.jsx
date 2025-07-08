@@ -17,7 +17,7 @@ const Navbar = () => {
     return (
 
         <nav className="bg-white border-gray-200" style={{ fontFamily: 'Poppins, sans-serif' }}>
-            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 pt-15">
+            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 pt-10 ">
                 {/* Logo with Libre Bodoni */}
                 <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <span
