@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 
 
-const Intro = () => {
+const AboutIntro = () => {
 
     useEffect(() => {
         const link = document.createElement('link');
@@ -18,14 +18,14 @@ const Intro = () => {
     }, []);
 
     return (
-        <div className="max-w-6xl mx-auto items-center pt-10">
+        <div className="max-w-6xl mx-auto items-center pt-10 ">
             <h1 className="text-[#88695e] text-5xl font-bold drop-shadow-xl mb-4 text-center"
                 style={{
                     fontFamily: '"Quicksand", sans-serif',
                     fontWeight: 300
                 }}
             >
-                We have a variety of therapists that can help with different issues.
+                We strive for the best
             </h1>
 
             <div className="max-w-4xl mx-auto items-center pt-3">
@@ -43,5 +43,5 @@ const Intro = () => {
         </div>
     );
 };
-export default Intro;
+export default AboutIntro;
 

@@ -1,9 +1,6 @@
 import Header from "../global-components/Header";
-import Intro from "../meet-the-team-components/Intro";
-import Team from "../meet-the-team-components/Team";
+import AboutIntro from "../about-components/about-intro";
 import Footer from "../global-components/Footer";
-
-
 
 export default function Home() {
     return (
@@ -11,8 +8,8 @@ export default function Home() {
             className="flex min-h-screen flex-col bg-white bg-no-repeat"
         >
             <Header />
-            <Intro />
-            <Team />
+            <AboutIntro />
+            <br></br>
             <br></br>
             <Footer />
         </main>

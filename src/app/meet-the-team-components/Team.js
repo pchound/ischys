@@ -9,14 +9,10 @@ const Team = () => {
     return (
 
 
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 items-center px-4">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 items-center px-4 pt-20">
 
-            {/*Section 1 */}
-            <div className='text-[#59433b] bg-[#f5edce] p-5 rounded-2xl max-w-sm mx-auto'>
-                <h1 className="color: black text-3xl md:text-3xl font-bold drop-shadow-xl mb-4 text-center">
-                    Laura Jane
-                </h1>
-
+            {/*Section */}
+            <div className='text-[#59433b] bg-[#f5edce] p-10 rounded-2xl h-full'>
                 <Image
                     src="/sample-smile.jpg"
                     alt="Anxiety Scribble"
@@ -25,15 +21,25 @@ const Team = () => {
                     className="mx-auto w-24 sm:w-32 md:w-40 lg:w-48 rounded-full"
                 />
 
-                <p className='text-s'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-
-            {/*Section 2 */}
-            <div className='text-[#59433b] bg-[#f5edce] p-5 rounded-2xl'>
-                <h1 className="color: black text-3xl md:text-3xl font-bold drop-shadow-xl mb-4 text-center">
+                <h1 className=" black text-3xl md:text-3xl font-bold drop-shadow-xl text-center pt-5">
                     Laura Jane
                 </h1>
 
+                <p className="text-[#88695e]  font-bold drop-shadow-xl mb-4 text-center">
+                    Highland Office <b></b>
+                    Supervising Therapist
+                </p>
+
+                <p className='text-s pt-2 pb-4'>My counseling background is very diverse. I have years of experience working with court-ordered clients facing anything from drug and alcohol charges to domestic violence.</p>
+
+                <button className="mx-auto block bg-white text-black font-semibold py-2 px-6 rounded-xl shadow hover:bg-gray-100 transition cursor-pointer">
+                    Learn more
+                </button>
+            </div>
+
+
+            {/*Section */}
+            <div className='text-[#59433b] bg-[#f5edce] p-10 rounded-2xl h-full'>
                 <Image
                     src="/sample-smile.jpg"
                     alt="Anxiety Scribble"
@@ -42,15 +48,24 @@ const Team = () => {
                     className="mx-auto w-24 sm:w-32 md:w-40 lg:w-48 rounded-full"
                 />
 
-                <p className='text-s pt-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-
-            {/*Section 3 */}
-            <div className='text-[#59433b] bg-[#f5edce] p-5 rounded-2xl'>
-                <h1 className="color: black text-3xl md:text-3xl font-bold drop-shadow-xl mb-4 text-center">
+                <h1 className=" black text-3xl md:text-3xl font-bold drop-shadow-xl text-center pt-5">
                     Laura Jane
                 </h1>
 
+                <p className="text-[#88695e]  font-bold drop-shadow-xl mb-4 text-center">
+                    Highland Office <b></b>
+                    Supervising Therapist
+                </p>
+
+                <p className='text-s pt-2 pb-4'>My counseling background is very diverse. I have years of experience working with court-ordered clients facing anything from drug and alcohol charges to domestic violence.</p>
+
+                <button className="mx-auto block bg-white text-black font-semibold py-2 px-6 rounded-xl shadow hover:bg-gray-100 transition cursor-pointer">
+                    Learn more
+                </button>
+            </div>
+
+            {/*Section */}
+            <div className='text-[#59433b] bg-[#f5edce] p-10 rounded-2xl h-full'>
                 <Image
                     src="/sample-smile.jpg"
                     alt="Anxiety Scribble"
@@ -59,15 +74,24 @@ const Team = () => {
                     className="mx-auto w-24 sm:w-32 md:w-40 lg:w-48 rounded-full"
                 />
 
-                <p className='text-s'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-
-            {/*Section 4 */}
-            <div className='text-[#59433b] bg-[#f5edce] p-5 rounded-2xl'>
-                <h1 className="color: black text-3xl md:text-3xl font-bold drop-shadow-xl mb-4 text-center">
+                <h1 className=" black text-3xl md:text-3xl font-bold drop-shadow-xl text-center pt-5">
                     Laura Jane
                 </h1>
 
+                <p className="text-[#88695e]  font-bold drop-shadow-xl mb-4 text-center">
+                    Highland Office <b></b>
+                    Supervising Therapist
+                </p>
+
+                <p className='text-s pt-2 pb-4'>My counseling background is very diverse. I have years of experience working with court-ordered clients facing anything from drug and alcohol charges to domestic violence.</p>
+
+                <button className="mx-auto block bg-white text-black font-semibold py-2 px-6 rounded-xl shadow hover:bg-gray-100 transition cursor-pointer">
+                    Learn more
+                </button>
+            </div>
+
+            {/*Section */}
+            <div className='text-[#59433b] bg-[#f5edce] p-10 rounded-2xl h-full'>
                 <Image
                     src="/sample-smile.jpg"
                     alt="Anxiety Scribble"
@@ -76,10 +100,21 @@ const Team = () => {
                     className="mx-auto w-24 sm:w-32 md:w-40 lg:w-48 rounded-full"
                 />
 
-                <p className='text-s'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h1 className=" black text-3xl md:text-3xl font-bold drop-shadow-xl text-center pt-5">
+                    Laura Jane
+                </h1>
+
+                <p className="text-[#88695e]  font-bold drop-shadow-xl mb-4 text-center">
+                    Highland Office <b></b>
+                    Supervising Therapist
+                </p>
+
+                <p className='text-s pt-2 pb-4'>My counseling background is very diverse. I have years of experience working with court-ordered clients facing anything from drug and alcohol charges to domestic violence.</p>
+
+                <button className="mx-auto block bg-white text-black font-semibold py-2 px-6 rounded-xl shadow hover:bg-gray-100 transition cursor-pointer">
+                    Learn more
+                </button>
             </div>
-
-
 
 
         </div>

@@ -58,7 +58,7 @@ const Navbar = () => {
                     <ul className="flex flex-col md:flex-row p-4 md:p-0 mt-4 md:mt-0 space-y-2 md:space-y-0 md:space-x-8 bg-gray-200 md:bg-white border border-gray-300 md:border-0 rounded-lg">
                         <li><Link href="/" className="block px-3 py-2 text-lg text-black hover:text-blue-700 hover:bg-gray-300 rounded">Home</Link></li>
                         <li><Link href="/meet-the-team" className="block px-3 py-2 text-lg text-black hover:text-blue-700 hover:bg-gray-300 rounded">Meet Our Team</Link></li>
-                        <li><Link href="#" className="block px-3 py-2 text-lg text-black hover:text-blue-700 hover:bg-gray-300 rounded">About</Link></li>
+                        <li><Link href="/about" className="block px-3 py-2 text-lg text-black hover:text-blue-700 hover:bg-gray-300 rounded">About</Link></li>
                         <li><Link href="#" className="block px-3 py-2 text-lg text-black hover:text-blue-700 hover:bg-gray-300 rounded">Contact</Link></li>
                         <li><Link href="#" className="block px-3 py-2 text-lg text-black hover:text-blue-700 hover:bg-gray-300 rounded">Book Now</Link></li>
                     </ul>

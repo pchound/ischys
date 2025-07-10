@@ -13,7 +13,7 @@ const Section3 = () => {
     useEffect(() => {
         const link = document.createElement('link');
         link.href =
-            'https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@200&display=swap';
+            'https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200;1,8..60,200&display=swap';
         link.rel = 'stylesheet';
         document.head.appendChild(link);
     }, []);
@@ -22,18 +22,21 @@ const Section3 = () => {
 
 
 
-        <div className="text-[#2a4c5b] bg-[radial-gradient(circle_at_center,_#9fd5ff,_#d3ffff)] py-16 px-6" style={{ fontFamily: '"Source Serif 4", serif', fontWeight: 200 }}
+        <div className="text-[#2a4c5b] bg-[radial-gradient(circle_at_center,_#9fd5ff,_#d3ffff)] py-16 px-6" style={{
+            fontFamily: '"Quicksand", sans-serif',
+
+        }}
         >
-            <h1 className="text-3xl md:text-4xl font-bold drop-shadow-xl mb-4 text-center pb-10" >
+            <h1 className="text-3xl md:text-4xl  drop-shadow-xl mb-4 text-center pb-10" >
                 At Ischys Wellness, we can help with:
             </h1>
 
-            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 items-center">
+            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 items-center" >
 
 
                 {/*Section 1 */}
                 <div>
-                    <h1 className="text-3xl md:text-3xl font-bold drop-shadow-xl mb-4 text-center">
+                    <h1 className="text-3xl md:text-3xl drop-shadow-xl mb-4 text-center">
                         Anxiety
                     </h1>
 
@@ -50,7 +53,7 @@ const Section3 = () => {
 
                 {/*Section 2 */}
                 <div>
-                    <h1 className="text-3xl md:text-3xl font-bold drop-shadow-xl mb-4 text-center">
+                    <h1 className="text-3xl md:text-3xl drop-shadow-xl mb-4 text-center">
                         Depression
                     </h1>
 
@@ -66,7 +69,7 @@ const Section3 = () => {
 
                 {/*Section 3 */}
                 <div>
-                    <h1 className="text-3xl md:text-3xl font-bold drop-shadow-xl mb-4 text-center">
+                    <h1 className="text-3xl md:text-3xl  drop-shadow-xl mb-4 text-center">
                         Relationships
                     </h1>
 
@@ -81,7 +84,7 @@ const Section3 = () => {
 
                 {/*Section 4 */}
                 <div>
-                    <h1 className="text-3xl md:text-3xl font-bold drop-shadow-xl mb-4 text-center">
+                    <h1 className="text-3xl md:text-3xl drop-shadow-xl mb-4 text-center">
                         Addiction
                     </h1>
 
