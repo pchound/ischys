@@ -18,7 +18,7 @@ const Intro = () => {
     }, []);
 
     return (
-        <div className="max-w-6xl mx-auto items-center pt-10">
+        <div className="max-w-6xl mx-auto items-center px-5 pt-10">
             <h1 className="text-[#88695e] text-5xl font-bold drop-shadow-xl mb-4 text-center"
                 style={{
                     fontFamily: '"Quicksand", sans-serif',
@@ -28,7 +28,7 @@ const Intro = () => {
                 We have a variety of therapists that can help with different issues.
             </h1>
 
-            <div className="max-w-4xl mx-auto items-center pt-3">
+            <div className="max-w-4xl mx-auto px-5 pt-3">
                 <p className='text-[#0f0b0a]'
                     style={{
                         fontFamily: '"Quicksand", sans-serif',
