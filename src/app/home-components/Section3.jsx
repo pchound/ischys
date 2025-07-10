@@ -42,7 +42,7 @@ const Section3 = () => {
                         alt="Anxiety Scribble"
                         width={200}
                         height={200}
-                        className="mx-auto"
+                        className="mx-auto w-24 sm:w-32 md:w-40 lg:w-48"
                     />
                 </div>
 
@@ -59,7 +59,7 @@ const Section3 = () => {
                         alt="Cloud"
                         width={200}
                         height={200}
-                        className="mx-auto"
+                        className="mx-auto w-24 sm:w-32 md:w-40 lg:w-48"
                     />
                 </div>
 
@@ -75,7 +75,7 @@ const Section3 = () => {
                         alt="Cloud"
                         width={200}
                         height={200}
-                        className="mx-auto"
+                        className="mx-auto w-24 sm:w-32 md:w-40 lg:w-48"
                     />
                 </div>
 
@@ -90,7 +90,7 @@ const Section3 = () => {
                         alt="Addiction ball & chain"
                         width={200}
                         height={200}
-                        className="mx-auto"
+                        className="mx-auto w-24 sm:w-32 md:w-40 lg:w-48"
                     />
                 </div>
             </div>

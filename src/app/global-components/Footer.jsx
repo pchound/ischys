@@ -6,7 +6,6 @@ const Footer = () => {
     return (
         <div>
 
-
             <p className="text-lg text-gray-500 text-center">
                 If you are in crisis, do not use this service.<br></br>
                 Please dial 911 or the suicide and crisis hotline at 988.<br></br><br></br>

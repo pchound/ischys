@@ -24,7 +24,7 @@ const VideoComponent = () => {
             <div className="absolute inset-0 flex items-center justify-center z-20">
                 <div className="flex flex-col items-center space-y-4 px-4">
                     <h1 className="text-white text-4xl md:text-6xl font-bold drop-shadow-xl text-center">
-                        We can help
+                        We offer mental help
                     </h1>
                     <p className="text-white text-xl md:text-2xl drop-shadow-xl text-center">
                         You don't have to do this alone.<br></br>
