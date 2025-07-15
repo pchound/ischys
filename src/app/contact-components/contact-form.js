@@ -88,31 +88,36 @@ const ContactForm = () => {
                 formSuccess ?
                     <div>{formSuccessMessage}</div>
                     :
-                    <form method="POST" action="https://www.formbackend.com/f/664decaabbf1c319" onSubmit={submitForm} className='text-amber-950 '>
-                        <div className="grid grid-cols-2 
-                    ">
+                    <form
+                        method="POST"
+                        action="https://www.formbackend.com/f/664decaabbf1c319"
+                        onSubmit={submitForm}
+                        className="text-amber-950 w-full max-w-3xl mx-auto px-4 space-y-6"
+                    >
+                        {/* First and Last Name */}
+                        <div className="grid grid-cols-2 gap-4">
                             <div>
-                                <label className='mr-2'>First Name<br></br></label>
+                                <label className="block mb-1">First Name</label>
                                 <input
                                     type="text"
                                     name="firstName"
                                     onChange={handleInput}
-                                    value={formData.name}
-                                    className="bg-[#fff2df] rounded-2xl p-2 mr-1 border border-transparent focus:border-[#59433b] focus:ring-2 focus:ring-[#59433b] outline-none"
+                                    value={formData.firstName}
+                                    className="bg-[#fff2df] rounded-2xl p-2 w-full border border-transparent focus:border-[#59433b] focus:ring-2 focus:ring-[#59433b] outline-none"
                                 />
                             </div>
-
                             <div>
-                                <label className='ml-2'>Last Name<br></br></label>
+                                <label className="block mb-1">Last Name</label>
                                 <input
                                     type="text"
-                                    name="firstName"
+                                    name="lastName"
                                     onChange={handleInput}
-                                    value={formData.name}
-                                    className="bg-[#fff2df] rounded-2xl p-2 ml-1 border border-transparent focus:border-[#59433b] focus:ring-2 focus:ring-[#59433b] outline-none"
+                                    value={formData.lastName}
+                                    className="bg-[#fff2df] rounded-2xl p-2 w-full border border-transparent focus:border-[#59433b] focus:ring-2 focus:ring-[#59433b] outline-none"
                                 />
                             </div>
                         </div>
+
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
                             <div className="md:col-span-2 flex justify-center">
