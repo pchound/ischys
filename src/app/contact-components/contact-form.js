@@ -92,7 +92,7 @@ const ContactForm = () => {
                         method="POST"
                         action="https://www.formbackend.com/f/664decaabbf1c319"
                         onSubmit={submitForm}
-                        className="text-amber-950 w-full max-w-3xl mx-auto ml-3 mr-3"
+                        className="text-amber-950 w-full max-w-xl mx-auto px-4"
                     >
                         {/* First and Last Name */}
                         <div className="grid grid-cols-2 gap-4">
