@@ -72,7 +72,7 @@ const ContactForm = () => {
     }, []);
 
     return (
-        <div className='max-w-8xl mx-auto items-center'>
+        <div className='md:max-w-8xl mx-auto items-center sm: pl-5 pr-5'>
 
             <h1 className='text-[#1d130a] text-center text-3xl pb-5'
                 style={{
@@ -87,7 +87,8 @@ const ContactForm = () => {
                 <div>{formSuccessMessage}</div>
                 :
                 <form method="POST" action="https://www.formbackend.com/f/664decaabbf1c319" onSubmit={submitForm} className='text-amber-950 '>
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-2 
+                    ">
                         <div>
                             <label>First Name<br></br></label>
                             <input
