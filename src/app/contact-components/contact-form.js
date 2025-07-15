@@ -72,102 +72,104 @@ const ContactForm = () => {
     }, []);
 
     return (
-        <div className='md:max-w-8xl mx-auto items-center sm: pl-5 pr-5'>
+        <div className='md:max-w-8xl mx-auto items-center'>
 
-            <h1 className='text-[#1d130a] text-center text-3xl pb-5'
+            <h1 className='text-[#1d130a]text - center text - 3xl pb - 5'
                 style={{
                     fontFamily: '"Quicksand", sans-serif',
                     fontWeight: 300
-                }}
+                }
+                }
             >
                 General Inquiries
-            </h1>
+            </h1 >
 
-            {formSuccess ?
-                <div>{formSuccessMessage}</div>
-                :
-                <form method="POST" action="https://www.formbackend.com/f/664decaabbf1c319" onSubmit={submitForm} className='text-amber-950 '>
-                    <div className="grid grid-cols-2 
+            {
+                formSuccess ?
+                    <div>{formSuccessMessage}</div>
+                    :
+                    <form method="POST" action="https://www.formbackend.com/f/664decaabbf1c319" onSubmit={submitForm} className='text-amber-950 '>
+                        <div className="grid grid-cols-2 
                     ">
-                        <div>
-                            <label>First Name<br></br></label>
-                            <input
-                                type="text"
-                                name="firstName"
-                                onChange={handleInput}
-                                value={formData.name}
-                                className="bg-[#fff2df] rounded-2xl p-2 border border-transparent focus:border-[#59433b] focus:ring-2 focus:ring-[#59433b] outline-none"
-                            />
-                        </div>
-
-                        <div>
-                            <label>Last Name<br></br></label>
-                            <input
-                                type="text"
-                                name="firstName"
-                                onChange={handleInput}
-                                value={formData.name}
-                                className="bg-[#fff2df] rounded-2xl p-2 border border-transparent focus:border-[#59433b] focus:ring-2 focus:ring-[#59433b] outline-none"
-                            />
-                        </div>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
-                        <div className="md:col-span-2 flex justify-center">
-                            <div className="w-full max-w-md">
-                                <label>Phone<br /></label>
+                            <div>
+                                <label className='mr-2'>First Name<br></br></label>
                                 <input
                                     type="text"
-                                    name="phone"
+                                    name="firstName"
                                     onChange={handleInput}
-                                    value={formData.phone}
-                                    className="bg-[#fff2df] rounded-2xl p-2 w-full border border-transparent focus:border-[#59433b] focus:ring-2 focus:ring-[#59433b] outline-none"
+                                    value={formData.name}
+                                    className="bg-[#fff2df] rounded-2xl p-2 mr-1 border border-transparent focus:border-[#59433b] focus:ring-2 focus:ring-[#59433b] outline-none"
+                                />
+                            </div>
+
+                            <div>
+                                <label className='ml-2'>Last Name<br></br></label>
+                                <input
+                                    type="text"
+                                    name="firstName"
+                                    onChange={handleInput}
+                                    value={formData.name}
+                                    className="bg-[#fff2df] rounded-2xl p-2 ml-1 border border-transparent focus:border-[#59433b] focus:ring-2 focus:ring-[#59433b] outline-none"
                                 />
                             </div>
                         </div>
-                    </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
-                        <div className="md:col-span-2 flex justify-center">
-                            <div className="w-full md:max-w-md">
-                                <label>Email<br /></label>
-                                <input
-                                    type="text"
-                                    name="email"
-                                    onChange={handleInput}
-                                    value={formData.email}
-                                    className="bg-[#fff2df] rounded-2xl p-2 w-full border border-transparent focus:border-[#59433b] focus:ring-2 focus:ring-[#59433b] outline-none"
-                                />
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+                            <div className="md:col-span-2 flex justify-center">
+                                <div className="w-full max-w-md">
+                                    <label>Phone<br /></label>
+                                    <input
+                                        type="text"
+                                        name="phone"
+                                        onChange={handleInput}
+                                        value={formData.phone}
+                                        className="bg-[#fff2df] rounded-2xl p-2 w-full border border-transparent focus:border-[#59433b] focus:ring-2 focus:ring-[#59433b] outline-none"
+                                    />
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
-                        <div className="md:col-span-2 flex justify-center">
-                            <div className="w-full max-w-xl">
-                                <label>Message<br /></label>
-                                <textarea
-                                    name="message"
-                                    onChange={handleInput}
-                                    value={formData.message}
-                                    className="bg-[#fff2df] rounded-2xl p-2 w-full h-40 border border-transparent focus:border-[#59433b] focus:ring-2 focus:ring-[#59433b] outline-none"
-                                ></textarea>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+                            <div className="md:col-span-2 flex justify-center">
+                                <div className="w-full md:max-w-md">
+                                    <label>Email<br /></label>
+                                    <input
+                                        type="text"
+                                        name="email"
+                                        onChange={handleInput}
+                                        value={formData.email}
+                                        className="bg-[#fff2df] rounded-2xl p-2 w-full border border-transparent focus:border-[#59433b] focus:ring-2 focus:ring-[#59433b] outline-none"
+                                    />
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
-                        <div className="md:col-span-2 flex justify-center">
-                            <button
-                                type="submit"
-                                className="bg-[#bda28c] rounded-2xl px-6 py-3 cursor-pointer hover:bg-[#8b6d55] text-white w-full max-w-l mt-4"
-                            >
-                                Submit
-                            </button>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+                            <div className="md:col-span-2 flex justify-center">
+                                <div className="w-full max-w-xl">
+                                    <label>Message<br /></label>
+                                    <textarea
+                                        name="message"
+                                        onChange={handleInput}
+                                        value={formData.message}
+                                        className="bg-[#fff2df] rounded-2xl p-2 w-full h-40 border border-transparent focus:border-[#59433b] focus:ring-2 focus:ring-[#59433b] outline-none"
+                                    ></textarea>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </form>
+
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+                            <div className="md:col-span-2 flex justify-center">
+                                <button
+                                    type="submit"
+                                    className="bg-[#bda28c] rounded-2xl px-6 py-3 cursor-pointer hover:bg-[#8b6d55] text-white w-full max-w-l mt-4"
+                                >
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+                    </form>
             }
         </div >
     );
