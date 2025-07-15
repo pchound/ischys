@@ -87,7 +87,7 @@ const ContactForm = () => {
                 <div>{formSuccessMessage}</div>
                 :
                 <form method="POST" action="https://www.formbackend.com/f/664decaabbf1c319" onSubmit={submitForm} className='text-amber-950 '>
-                    <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
+                    <div className="grid md:grid-cols-2 max-w-8xl sm:grid-cols-1 max-w-8xl gap-4">
                         <div>
                             <label>First Name<br></br></label>
                             <input
