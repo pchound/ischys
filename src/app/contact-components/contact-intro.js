@@ -6,7 +6,6 @@ import Image from 'next/image';
 
 
 
-
 const ContactIntro = () => {
 
     useEffect(() => {
@@ -25,19 +24,8 @@ const ContactIntro = () => {
                     fontWeight: 300
                 }}
             >
-                Ready to start your journey for better mental help?
+                Ready to start your journey?
             </h1>
-
-            <div className="max-w-4xl mx-auto items-center px-5 pt-3">
-                <p className='text-[#0f0b0a]'
-                    style={{
-                        fontFamily: '"Quicksand", sans-serif',
-                        fontWeight: 300
-                    }}
-                >
-                    Contact stuff goes here. Complicated thing for another day.
-                </p>
-            </div>
         </div>
     );
 };

@@ -22,11 +22,11 @@ const Section3 = () => {
 
 
 
-        <div className="text-[#2a4c5b] bg-[radial-gradient(circle_at_center,_#9fd5ff,_#d3ffff)] py-16 px-6" style={{
-            fontFamily: '"Quicksand", sans-serif',
-
-        }}
+        <div
+            className="text-[#2a4c5b] bg-[radial-gradient(circle_at_center,_#9fd5ff,_#d3ffff)] py-16 px-6 max-w-8xl w-full mx-auto"
+            style={{ fontFamily: '"Quicksand", sans-serif' }}
         >
+
             <h1 className="text-3xl md:text-4xl  drop-shadow-xl mb-4 text-center pb-10" >
                 At Ischys Wellness, we can help with:
             </h1>
