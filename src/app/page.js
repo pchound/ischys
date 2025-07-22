@@ -18,7 +18,7 @@ export default function Home() {
             <Section3 />
             <br></br>
             <TeenDepression />
-            <br></br>
+            <br></br><br></br>
             <Footer />
         </main>
     );
