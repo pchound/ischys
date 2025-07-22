@@ -72,9 +72,18 @@ const ContactForm = () => {
     }, []);
 
     return (
+
+
+
+
+
+
+
         <div className='md:max-w-8xl mx-auto items-center'>
 
-            <h1 className='text-[#1d130a]text - center text - 3xl pb - 5'
+
+
+            <h1 className='text-[#27201a] text-center text-3xl pb-5'
                 style={{
                     fontFamily: '"Quicksand", sans-serif',
                     fontWeight: 300
@@ -176,7 +185,21 @@ const ContactForm = () => {
                         </div>
                     </form>
             }
-        </div >
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
     );
 }
 
