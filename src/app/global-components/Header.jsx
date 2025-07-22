@@ -60,6 +60,7 @@ const Navbar = () => {
                         <li><Link href="/meet-the-team" className="block px-3 py-2 text-lg text-black hover:text-blue-700 hover:bg-gray-300 rounded">Meet Our Team</Link></li>
                         <li><Link href="/about" className="block px-3 py-2 text-lg text-black hover:text-blue-700 hover:bg-gray-300 rounded">About</Link></li>
                         <li><Link href="/contact" className="block px-3 py-2 text-lg text-black hover:text-blue-700 hover:bg-gray-300 rounded">Contact</Link></li>
+                        <li><Link href="/contact" className="block px-3 py-2 text-lg text-black hover:text-blue-700 hover:bg-gray-300 rounded">Test</Link></li>
                     </ul>
                 </div>
             </div>
