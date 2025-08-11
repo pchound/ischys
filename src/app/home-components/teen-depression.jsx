@@ -11,10 +11,18 @@ const Section1 = () => {
 
     return (
         <div className="bg-[radial-gradient(circle_at_center,_#f5deb3,_#f5f5dc)] py-16 px-6">
-            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
+            style={{ fontFamily: '"Quicksand", sans-serif' }}
+            >
+                
                 {/* Text Section */}
                 <div data-aos="fade-right" data-aos-duration="800">
-                    <h1 className="text-black text-3xl md:text-4xl font-bold drop-shadow-xl mb-4">
+                     <h1 className="text-[#88695e] text-5xl font-bold drop-shadow-xl mb-4"
+                style={{
+                    fontFamily: '"Quicksand", sans-serif',
+                    fontWeight: 300
+                }}
+            >
                         1 in 4 teens suffer from depression
                     </h1>
                     <p className="text-lg text-gray-800">

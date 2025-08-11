@@ -13,7 +13,7 @@ const Section3 = () => {
     useEffect(() => {
         const link = document.createElement('link');
         link.href =
-            'https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200;1,8..60,200&display=swap';
+            '';
         link.rel = 'stylesheet';
         document.head.appendChild(link);
     }, []);
@@ -22,12 +22,14 @@ const Section3 = () => {
 
 
 
-        <div
+        <div 
+            
             className="text-[#2a4c5b] bg-[radial-gradient(circle_at_center,_#9fd5ff,_#d3ffff)] py-16 px-6 max-w-8xl w-full mx-auto"
             style={{ fontFamily: '"Quicksand", sans-serif' }}
         >
 
-            <h1 className="text-3xl md:text-4xl  drop-shadow-xl mb-4 text-center pb-10" >
+            <h1 data-aos="fade" data-aos-duration="1000"
+             className="text-3xl md:text-4xl  drop-shadow-xl mb-4 text-center pb-10" >
                 At Ischys Wellness, we can help with:
             </h1>
 
@@ -35,7 +37,7 @@ const Section3 = () => {
 
 
                 {/*Section 1 */}
-                <div>
+                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                     <h1 className="text-3xl md:text-3xl drop-shadow-xl mb-4 text-center">
                         Anxiety
                     </h1>
@@ -52,7 +54,7 @@ const Section3 = () => {
 
 
                 {/*Section 2 */}
-                <div>
+                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                     <h1 className="text-3xl md:text-3xl drop-shadow-xl mb-4 text-center">
                         Depression
                     </h1>
@@ -68,7 +70,8 @@ const Section3 = () => {
 
 
                 {/*Section 3 */}
-                <div>
+                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                
                     <h1 className="text-3xl md:text-3xl  drop-shadow-xl mb-4 text-center">
                         Relationships
                     </h1>
@@ -83,7 +86,8 @@ const Section3 = () => {
                 </div>
 
                 {/*Section 4 */}
-                <div>
+                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                
                     <h1 className="text-3xl md:text-3xl drop-shadow-xl mb-4 text-center">
                         Addiction
                     </h1>

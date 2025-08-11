@@ -35,12 +35,12 @@ const VideoComponent = () => {
                 <div className="flex flex-col items-center space-y-4 px-4"
 
                 >
-                    <h1 className="text-white text-4xl md:text-6xl font-bold drop-shadow-xl text-center">
-                        We offer mental help
+                    <h1 className="text-white text-2xl md:text-4xl font-bold drop-shadow-xl text-center"
+                    >
+                        You’re Not Broken—You’re Overloaded.<br></br> Let’s Bring You Back to Calm.
                     </h1>
-                    <p className="text-white text-xl md:text-2xl drop-shadow-xl text-center">
-                        You don't have to do this alone.<br></br>
-                        Schedule your appointment now.
+                    <p className="text-white md:text-sm drop-shadow-xl text-center md:w-xl">
+                        Licensed Psychiatric-Mental Health Nurse Practitioner helping women in Utah heal anxiety, trauma, and emotional burnout—using evidence-based psychiatry + soul-centered care.
                     </p>
                     {/* Buttons Row */}
                     <div className="flex space-x-4 mt-2">
