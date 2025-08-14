@@ -44,36 +44,98 @@ const Intro = () => {
 <br></br>
 
 
+
+
+
+
+
 <div className="text-[#59433b] bg-[#f5edce] p-10 rounded-2xl h-full max-w-7xl mx-auto">
-            <h1 className="text-3xl md:text-3xl font-bold drop-shadow-xl text-center pt-5"
-                            style={{
-                    fontFamily: '"Quicksand", sans-serif',
-                    fontWeight: 300
-                }}>
-                Fun facts about me:
-            </h1>
+  <h1
+    className="text-3xl drop-shadow-xl text-center pt-5 mb-5"
+    style={{
+      fontFamily: '"Quicksand", sans-serif',
+      fontWeight: 300,
+    }}
+  >
+    Fun facts about me:
+  </h1>
 
-
-      {/* Container with group class so children can react to hover */}
-      <div className="group relative w-64 h-30 bg-[#4b3931] rounded-2xl overflow-hidden shadow-lg cursor-pointer">
-        {/* Visible content */}
-        <div className="absolute inset-0 flex items-center justify-center text-white text-xl font-bold">
-          Fact #1
-        </div>
-
-        {/* Hidden content that fades in */}
-        <div className="text-center absolute inset-0 bg-[#f5edce] bg-opacity-60 opacity-0 group-hover:opacity-100 flex items-center justify-center text-[#59433b] text-sm transition-opacity duration-300">
-          <div className='ml-5 mr-5'>
+  {/* Row of 3 facts */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center">
+    {/* FACT 1 */}
+    <div className="group relative w-64 h-32 bg-[#4b3931] rounded-2xl overflow-hidden shadow-lg cursor-pointer">
+      <div
+        className="absolute inset-0 flex items-center justify-center text-white text-xl"
+        style={{
+          fontFamily: '"Quicksand", sans-serif',
+          fontWeight: 300,
+        }}
+      >
+        Fact #1
+      </div>
+      <div className="text-center absolute inset-0 bg-[#f5edce] bg-opacity-60 opacity-0 group-hover:opacity-100 flex items-center justify-center text-[#59433b] text-sm transition-opacity duration-300">
+        <div
+          className="px-4"
+          style={{
+            fontFamily: '"Quicksand", sans-serif',
+            fontWeight: 500,
+          }}
+        >
           I have acting experience—storytelling is part of how I connect.
-          </div>
         </div>
       </div>
- 
+    </div>
 
+    {/* FACT 2 */}
+    <div className="group relative w-64 h-32 bg-[#4b3931] rounded-2xl overflow-hidden shadow-lg cursor-pointer">
+      <div
+        className="absolute inset-0 flex items-center justify-center text-white text-xl"
+        style={{
+          fontFamily: '"Quicksand", sans-serif',
+          fontWeight: 300,
+        }}
+      >
+        Fact #2
+      </div>
+      <div className="text-center absolute inset-0 bg-[#f5edce] bg-opacity-60 opacity-0 group-hover:opacity-100 flex items-center justify-center text-[#59433b] text-sm transition-opacity duration-300">
+        <div
+          className="px-4"
+          style={{
+            fontFamily: '"Quicksand", sans-serif',
+            fontWeight: 500,
+          }}
+        >
+          I believe your environment shapes your healing, which is why I’m creating a clinic that feels like a sanctuary.
+        </div>
+      </div>
+    </div>
 
-
-
+    {/* FACT 3 */}
+    <div className="group relative w-64 h-32 bg-[#4b3931] rounded-2xl overflow-hidden shadow-lg cursor-pointer">
+      <div
+        className="absolute inset-0 flex items-center justify-center text-white text-xl"
+        style={{
+          fontFamily: '"Quicksand", sans-serif',
+          fontWeight: 300,
+        }}
+      >
+        Fact #3
+      </div>
+      <div className="text-center absolute inset-0 bg-[#f5edce] bg-opacity-60 opacity-0 group-hover:opacity-100 flex items-center justify-center text-[#59433b] text-sm transition-opacity duration-300">
+        <div
+          className="px-4"
+          style={{
+            fontFamily: '"Quicksand", sans-serif',
+            fontWeight: 500,
+          }}
+        >
+          I’m endlessly curious about the brain and its ability to change.
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
     </>
   );
 };
