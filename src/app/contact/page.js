@@ -12,7 +12,6 @@ export default function Home() {
             <Header />
             <ContactIntro />
             <br></br>
-
             <ContactForm />
             <br></br>
             <br></br>

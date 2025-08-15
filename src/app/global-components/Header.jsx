@@ -98,7 +98,7 @@ const Navbar = () => {
               <button
                 type="button"
                 onClick={() => setServicesOpen((v) => !v)}
-                className="flex items-center justify-between w-full md:w-auto px-3 py-2 text-left text-lg text-black hover:text-blue-700 hover:bg-gray-300 rounded md:hover:bg-transparent"
+                className="cursor-pointer flex items-center justify-between w-full md:w-auto px-3 py-2 text-left text-lg text-black hover:text-blue-700 hover:bg-gray-300 rounded md:hover:bg-transparent "
                 aria-haspopup="true"
                 aria-expanded={servicesOpen}
                 aria-controls="services-menu"
@@ -123,12 +123,22 @@ const Navbar = () => {
                 id="services-menu"
                 className={`
                   ${servicesOpen ? 'block' : 'hidden'}
-                  md:absolute md:top-full md:left-0 md:mt-2 md:w-64 md:rounded-lg md:border md:border-gray-200 md:bg-white md:shadow-lg md:p-2 md:z-50
+                   md:absolute md:top-full md:left-0 md:mt-2 md:w-64 md:rounded-lg md:border md:border-gray-200 md:bg-white md:shadow-lg md:p-2 md:z-50
                 `}
                 role="menu"
                 aria-label="Services submenu"
               >
-                <ul className="flex flex-col">
+                <ul className="flex flex-col ">
+                    <li>
+                    <Link
+                      href="/services"
+                      className="block px-3 py-2 text-base text-gray-800 rounded hover:bg-gray-100"
+                      role="menuitem"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      General
+                    </Link>
+                  </li>
                   <li>
                     <Link
                       href="/services/therapy"
@@ -136,7 +146,7 @@ const Navbar = () => {
                       role="menuitem"
                       onClick={() => setMenuOpen(false)}
                     >
-                      Individual Therapy
+                      Anxiety & Mood Care
                     </Link>
                   </li>
                   <li>
@@ -146,7 +156,7 @@ const Navbar = () => {
                       role="menuitem"
                       onClick={() => setMenuOpen(false)}
                     >
-                      Couples Counseling
+                      Trauma Recovery Support
                     </Link>
                   </li>
                   <li>
@@ -156,7 +166,7 @@ const Navbar = () => {
                       role="menuitem"
                       onClick={() => setMenuOpen(false)}
                     >
-                      Anxiety & Stress Care
+                      Medication Management
                     </Link>
                   </li>
                   <li>
@@ -166,7 +176,7 @@ const Navbar = () => {
                       role="menuitem"
                       onClick={() => setMenuOpen(false)}
                     >
-                      Trauma / EMDR
+                      Emotional Coaching
                     </Link>
                   </li>
                 </ul>
