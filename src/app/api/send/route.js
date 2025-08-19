@@ -1,15 +1,21 @@
-import { Resend } from 'resend';
+// app/api/send/route.js
+export const runtime = 'nodejs'; // Ensure Node runtime for Resend SDK
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-const fromEmail = process.env.FROM_EMAIL;
+import { NextResponse } from 'next/server';
+import { sendEmail } from '@/lib/actions'; // adjust the import if your path differs
 
-export async function handler(req,res) {
+export async function POST(request) {
   try {
-    const data = req.body
+    const body = await request.json();
+    // body should have: { fname, lname, phone, email, message }
+    const result = await sendEmail(body);
 
-    return res.json(data);
-  } catch (error) {
-    console.log(error) 
-    return NextResponse.json({ error }, { status: 500 });
+    const status = result?.success ? 200 : 400;
+    return NextResponse.json(result, { status });
+  } catch (err) {
+    return NextResponse.json(
+      { success: false, error: 'Invalid request body' },
+      { status: 400 }
+    );
   }
 }
