@@ -2,8 +2,8 @@
 export const runtime = 'nodejs'; // Ensure Node runtime for Resend SDK
 
 import { NextResponse } from 'next/server';
-import { sendEmail } from '../../../lib/actions'; // adjust the import if your path differs
-
+//import { sendEmail } from '../../../lib/actions'; // adjust the import if your path differs
+//import { sendEmail } from '@src/lib/actions';
 export async function POST(request) {
   try {
     const body = await request.json();

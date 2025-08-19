@@ -1,5 +1,5 @@
 "use client";
-import { sendEmail } from "../../lib/actions";
+import { sendEmail } from "./actions";
 import { useState } from "react";
 
 // Format to "(123) 456-7890" as the user types
