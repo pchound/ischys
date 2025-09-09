@@ -25,7 +25,7 @@ const AboutIntro = () => {
                     fontWeight: 300
                 }}
             >
-                We strive for the best
+                Mission Statement
             </h1>
 
             <div className="max-w-4xl mx-auto items-center px-5 pt-3">
@@ -35,9 +35,9 @@ const AboutIntro = () => {
                         fontWeight: 300
                     }}
                 >
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.<br></br><br></br>
+                   Our mission is to provide compassionate, whole-person, and inclusive mental health care that blends evidence-based medicine with natural approaches. We are dedicated to expanding healing for Utah’s veterans, families, and communities most impacted by social determinants of health—such as  addiction and mental wellbeing stigma—through personalized, life-changing treatment that restores hope, fosters resilience, and delivers innovative care in a supportive and healing environment. 
 
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+
                 </p>
             </div>
         </div>

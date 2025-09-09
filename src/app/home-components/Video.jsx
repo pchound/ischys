@@ -17,7 +17,7 @@ const VideoComponent = () => {
         <div className="relative w-full h-screen overflow-hidden">
             {/* Background Video */}
             <video
-                src="/video/sample.mp4"
+                src="/video/intro.mp4"
                 autoPlay
                 loop
                 muted

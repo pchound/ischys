@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -52,7 +53,13 @@ const Navbar = () => {
             className="text-center text-2xl font-semibold whitespace-nowrap dark:text-black"
             style={{ fontFamily: '"Libre Bodoni", serif' }}
           >
-            ISCHYS <br /> WELLNESS
+                    <Image
+                      src="/logo2.jpg"
+                      alt="Ischys Wellness"
+                      width={400}
+                      height={400}
+                      className="mx-auto lg:w-72 "
+                    />
           </span>
         </Link>
 

@@ -10,6 +10,7 @@ export default function Home() {
         <main
             className="flex min-h-screen flex-col bg-white bg-no-repeat"
         >
+            
             <Header />
             <Video />
             <br></br>

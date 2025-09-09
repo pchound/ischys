@@ -36,9 +36,37 @@ const Intro = () => {
           className="text-md pt-2 pb-4 md:ml-8 md:mr-8 lg:ml-[7.5rem] lg:mr-[7.5rem]"
           style={{ fontFamily: '"Quicksand", sans-serif' }}
         >
-          I’ve seen what unresolved trauma can do—how it hides under the mask of “high-functioning,” how it wears down the body and the mind. I’ve lived through my own storms and stood beside patients in theirs.
-          <br /><br />
-          I’m Laura Jane, a Licensed Psychiatric-Mental Health Nurse Practitioner with a DEA license to prescribe and a vision for care that blends science and soul. My approach is clinical, trauma-informed, and deeply human.
+        Hi, I’m Laura Jane Hyte-Garner, and if there’s one thing you should know about me, it’s this: I believe healing happens when people feel truly seen, heard, and connected.
+
+<br></br><br></br>
+
+For more than 30 years, I’ve walked alongside people through their hardest moments—as a nurse, a Psychiatric-Mental Health Nurse Practitioner, a mentor, and an advocate. My career has taken me from hospital rooms to veterans’ clinics, from community health programs to private practice, but my heart has always stayed the same: I am here to help people find hope and strength, even when life feels overwhelming.
+
+<br></br><br></br>
+
+I specialize in mental health and addiction care, serving veterans, families, individuals with autism, and the LGBTQ+ community. These groups hold a special place in my heart because I know how often they are overlooked, dismissed, or told to “just deal with it.” My approach is different: I combine the best of evidence-based medicine with natural, whole-person care. That means not just treating symptoms, but restoring balance, resilience, and joy to people’s lives.
+
+<br></br><br></br>
+
+I also know what it feels like to struggle. My own journey hasn’t been easy—navigating grief, setbacks, and obstacles in both my personal life and my career. But those experiences shaped me into the clinician I am today. They taught me empathy, grit, and the belief that no one is ever broken beyond repair.
+
+<br></br><br></br>
+
+When I dreamed of building my own clinics, I imagined spaces that felt less like doctor’s offices and more like sanctuaries—welcoming, calm, and stigma-free. Places where veterans can finally exhale, where families can rebuild trust, where young people can know they belong. And because I believe access matters, I want to bring these clinics not only to cities, but also to rural Utah, where resources are scarce but the need is just as great.
+
+<br></br><br></br>
+
+Beyond serving patients, I am committed to shaping the future of mental health care. I know how difficult it is for students to find clinical placements—it was one of the hardest parts of my own training. That’s why I’m building a practice that also functions as a training hub for future therapists and Psychiatric-Mental Health Nurse Practitioners. Supporting the next generation is one of the best ways I can give back to the profession that has given me so much.
+
+<br></br><br></br>
+
+At the core of everything I do is connection: connecting people to care, families to healing, communities to hope, and students to mentorship. That is what fuels me every single day.
+
+<br></br><br></br>
+
+So, if you’re here, I want you to know—you don’t have to walk this journey alone. Whether you’re a veteran seeking healing, a family coping with addiction, or someone simply trying to find your way through the stress of life, you belong here. And together, we’ll find a path forward.
+
+
         </p>
       </div>
 <br></br>
