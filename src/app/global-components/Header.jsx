@@ -148,12 +148,42 @@ const Navbar = () => {
                   </li>
                   <li>
                     <Link
-                      href="/services/therapy"
+                      href="/anxiety"
                       className="block px-3 py-2 text-base text-gray-800 rounded hover:bg-gray-100"
                       role="menuitem"
                       onClick={() => setMenuOpen(false)}
                     >
                       Anxiety & Mood Care
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/services/therapy"
+                      className="block px-3 py-2 text-base text-gray-800 rounded hover:bg-gray-100"
+                      role="menuitem"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      Depression
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/services/therapy"
+                      className="block px-3 py-2 text-base text-gray-800 rounded hover:bg-gray-100"
+                      role="menuitem"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      Relationships
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/services/therapy"
+                      className="block px-3 py-2 text-base text-gray-800 rounded hover:bg-gray-100"
+                      role="menuitem"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      Addiction
                     </Link>
                   </li>
                   <li>
@@ -185,6 +215,26 @@ const Navbar = () => {
                     >
                       Emotional Coaching
                     </Link>
+                    <li>
+                    <Link
+                      href="/services/therapy"
+                      className="block px-3 py-2 text-base text-gray-800 rounded hover:bg-gray-100"
+                      role="menuitem"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      Autism & Neurodiversity
+                    </Link>
+                    <li>
+                    <Link
+                      href="/services/therapy"
+                      className="block px-3 py-2 text-base text-gray-800 rounded hover:bg-gray-100"
+                      role="menuitem"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      Inclusive Care (LGBTQ + LDS + Everyone)
+                    </Link>
+                  </li>
+                  </li>
                   </li>
                 </ul>
               </div>

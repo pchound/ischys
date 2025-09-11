@@ -100,7 +100,19 @@ const Section3 = () => {
                         className="mx-auto w-24 sm:w-32 md:w-40 lg:w-48"
                     />
                 </div>
+
+            <br></br><br></br>
             </div>
+                <h1
+                    className="text-3xl md:text-4xl  drop-shadow-xl mb-4 text-center " >
+                    And many more:
+                </h1>
+
+                    <div className=" flex justify-center">
+                        <button className="bg-white text-black font-semibold py-2 px-6 rounded-xl shadow hover:bg-gray-100 transition cursor-pointer">
+                            Learn more
+                        </button>
+                    </div>
         </div>
     );
 };
