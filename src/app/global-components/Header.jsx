@@ -153,52 +153,15 @@ const Navbar = () => {
                       role="menuitem"
                       onClick={() => setMenuOpen(false)}
                     >
-                      Anxiety & Mood Care
+                      Anxiety & Depression
                     </Link>
                   </li>
+
+
+
                   <li>
                     <Link
-                      href="/services/therapy"
-                      className="block px-3 py-2 text-base text-gray-800 rounded hover:bg-gray-100"
-                      role="menuitem"
-                      onClick={() => setMenuOpen(false)}
-                    >
-                      Depression
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/services/therapy"
-                      className="block px-3 py-2 text-base text-gray-800 rounded hover:bg-gray-100"
-                      role="menuitem"
-                      onClick={() => setMenuOpen(false)}
-                    >
-                      Relationships
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/services/therapy"
-                      className="block px-3 py-2 text-base text-gray-800 rounded hover:bg-gray-100"
-                      role="menuitem"
-                      onClick={() => setMenuOpen(false)}
-                    >
-                      Addiction
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/services/couples"
-                      className="block px-3 py-2 text-base text-gray-800 rounded hover:bg-gray-100"
-                      role="menuitem"
-                      onClick={() => setMenuOpen(false)}
-                    >
-                      Trauma Recovery Support
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/services/anxiety"
+                      href="/medication"
                       className="block px-3 py-2 text-base text-gray-800 rounded hover:bg-gray-100"
                       role="menuitem"
                       onClick={() => setMenuOpen(false)}
@@ -206,36 +169,29 @@ const Navbar = () => {
                       Medication Management
                     </Link>
                   </li>
-                  <li>
-                    <Link
-                      href="/services/trauma-emdr"
-                      className="block px-3 py-2 text-base text-gray-800 rounded hover:bg-gray-100"
-                      role="menuitem"
-                      onClick={() => setMenuOpen(false)}
-                    >
-                      Emotional Coaching
-                    </Link>
+
                     <li>
                     <Link
-                      href="/services/therapy"
+                      href="/autism"
                       className="block px-3 py-2 text-base text-gray-800 rounded hover:bg-gray-100"
                       role="menuitem"
                       onClick={() => setMenuOpen(false)}
                     >
                       Autism & Neurodiversity
                     </Link>
+                    </li>
                     <li>
                     <Link
-                      href="/services/therapy"
+                      href="/inclusive-care"
                       className="block px-3 py-2 text-base text-gray-800 rounded hover:bg-gray-100"
                       role="menuitem"
                       onClick={() => setMenuOpen(false)}
                     >
                       Inclusive Care (LGBTQ + LDS + Everyone)
                     </Link>
+                  
                   </li>
-                  </li>
-                  </li>
+                  
                 </ul>
               </div>
             </li>
