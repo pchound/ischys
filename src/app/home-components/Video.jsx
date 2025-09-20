@@ -44,14 +44,17 @@ const VideoComponent = () => {
                     </p>
                     {/* Buttons Row */}
                     <div className="flex space-x-4 mt-2">
-                        <Link href="/quiz">
+
+                        <Link href="/contact">
                             <button className="bg-white text-black font-semibold py-2 px-6 rounded-xl shadow hover:bg-gray-100 transition cursor-pointer">
                                 Book Now
                             </button>
                         </Link>
-                        <button className="bg-tan-500 text-white font-semibold py-2 px-6 rounded-xl shadow hover:bg-tan-600 transition cursor-pointer">
-                            Watch Video
-                        </button>
+                        <Link href="/">
+                            <button className="bg-white text-black font-semibold py-2 px-6 rounded-xl shadow hover:bg-gray-100 transition cursor-pointer">
+                                Watch Video
+                            </button>
+                        </Link>
                     </div>
 
                 </div>

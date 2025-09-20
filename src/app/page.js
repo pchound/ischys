@@ -1,6 +1,7 @@
 import Header from "./global-components/Header";
 import Video from "./home-components/Video";
 import TeenDepression from "./home-components/teen-depression";
+import Section1 from "./home-components/Section1";
 import Section2 from "./home-components/Section2";
 import Section3 from "./home-components/Section3";
 import Footer from "./global-components/Footer";
@@ -13,6 +14,8 @@ export default function Home() {
             
             <Header />
             <Video />
+            <br></br>
+            <Section1 />
             <br></br>
             <Section2 />
             <br></br>
