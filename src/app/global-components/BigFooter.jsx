@@ -57,7 +57,7 @@ const BigFooter = () => {
                 }}
             >
                 &copy; {currentYear} All rights reserved
-            </p><br></br><br></br>
+            </p><br></br>
 
 
       

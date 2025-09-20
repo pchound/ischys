@@ -16,8 +16,11 @@ const Intro = () => {
     }, []);
 
     return (
-        <div className="max-w-6xl mx-auto items-center px-5 pt-10 mb-10">
-            <h1 className="text-[#88695e] text-3xl font-bold drop-shadow-xl mb-4 text-center"
+        <div className='bg-gray-100'>
+        <div className="max-w-6xl mx-auto items-center px-5 pt-10 mb-10 ">
+            
+        
+            <h1 className="text-[#88695e] font-bold drop-shadow-xl mb-4 text-center text-5xl"
                 style={{
                     fontFamily: '"Quicksand", sans-serif',
                     fontWeight: 300
@@ -26,15 +29,15 @@ const Intro = () => {
                 “Anxiety and Depression Don’t Have to Define You.”
             </h1>
 
-            <div className="max-w-4xl mx-auto px-5 pt-3">
+            <div className="max-w-4xl mx-auto px-5 pt-3 text-2xl">
                 <p className='text-[#0f0b0a]'
                     style={{
                         fontFamily: '"Quicksand", sans-serif',
                         fontWeight: 300
                     }}
                 >
-If you’re here, you may feel exhausted, hopeless, or like your mind never quiets. You’re not alone—and you’re not weak.
-I offer:
+            If you’re here, you may feel exhausted, hopeless, or like your mind never quiets. You’re not alone—and you’re not weak.
+            I offer:
                 </p>
             </div>
 
@@ -50,11 +53,12 @@ I offer:
                         <li>• Holistic supports to help medication work more effectively</li>
                     </ul>
                 </div>
+        
+</div>
 
 
-
-<br></br><br></br>
-
+<div className='bg-white'>
+    <br></br><br></br>
             <h1 className="text-[#88695e] text-3xl font-bold drop-shadow-xl mb-4 text-center"
                 style={{
                     fontFamily: '"Quicksand", sans-serif',
@@ -92,7 +96,7 @@ What it can look like: withdrawal from friends, sleep/appetite changes, irritabi
 
             </div>
             </div>
-            
+            </div>
 
     );
 };
