@@ -33,7 +33,7 @@ const BigFooter = () => {
                     fontWeight: 500
                 }}
             >
-                (123) 456-7890
+                (801) 796-2552
             </p>
 
 
@@ -46,7 +46,7 @@ const BigFooter = () => {
                     fontWeight: 500
                 }}
             >
-                123 Maple Street. Anytown, PA 17101
+                 802 Bamberger Dr, American Fork, UT 84003
             </p>
 
 
