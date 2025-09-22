@@ -16,8 +16,14 @@ const Intro = () => {
     }, []);
 
     return (
-        <div className="max-w-6xl mx-auto items-center px-5 pt-10 mb-10">
-            <h1 className="text-[#88695e] text-3xl font-bold drop-shadow-xl mb-4 text-center"
+<div
+  className=""
+             >
+
+           <br></br>
+           
+        <div className="max-w-6xl mx-auto items-center px-5 p-10 mb-10 bg-white border-4 border-blue-950 border-radius: rounded-xl">
+            <h1 className="text-[#1d51c2] text-5xl font-bold drop-shadow-xl mb-4 text-center"
                 style={{
                     fontFamily: '"Quicksand", sans-serif',
                     fontWeight: 300
@@ -26,7 +32,16 @@ const Intro = () => {
                 “Supporting Every Mind, Every Way.”
             </h1>
 
-            <div className="max-w-4xl mx-auto px-5 pt-3">
+                <Image
+                src="/autism.png"
+                alt="Autism"
+                width={200}
+                height={200}
+                className="mx-auto w-40   rounded-full"
+                />
+
+
+            <div className="max-w-4xl mx-auto px-5 pt-3 text-xl">
                 <p className='text-[#0f0b0a]'
                     style={{
                         fontFamily: '"Quicksand", sans-serif',
@@ -51,8 +66,8 @@ This includes:
                     </ul>
                 </div>
             </div>
-            
-
+  
+</div>
     );
 };
 export default Intro;

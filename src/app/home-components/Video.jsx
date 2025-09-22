@@ -40,7 +40,7 @@ const VideoComponent = () => {
                         You’re Not Broken—You’re Overloaded.<br></br> Let’s Bring You Back to Calm.
                     </h1>
                     <p className="text-white md:text-sm drop-shadow-xl text-center md:w-xl">
-                        Licensed Psychiatric-Mental Health Nurse Practitioner helping women in Utah heal anxiety, trauma, and emotional burnout—using evidence-based psychiatry + soul-centered care.
+                        Licensed Psychiatric-Mental Health Nurse Practitioner helping people in Utah heal anxiety, trauma, and emotional burnout—using evidence-based psychiatry + soul-centered care.
                     </p>
                     {/* Buttons Row */}
                     <div className="flex space-x-4 mt-2">
@@ -50,11 +50,11 @@ const VideoComponent = () => {
                                 Book Now
                             </button>
                         </Link>
-                        <Link href="/">
+                        {/*<Link href="/">
                             <button className="bg-white text-black font-semibold py-2 px-6 rounded-xl shadow hover:bg-gray-100 transition cursor-pointer">
                                 Watch Video
                             </button>
-                        </Link>
+                        </Link>*/}
                     </div>
 
                 </div>

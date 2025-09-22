@@ -95,8 +95,8 @@ const Navbar = () => {
             </li>
 
             <li>
-              <Link href="/meet-the-team" className="block px-3 py-2 text-lg text-black hover:text-blue-700 hover:bg-gray-300 rounded">
-                Meet Our Team
+              <Link href="/laura-jane" className="block px-3 py-2 text-lg text-black hover:text-blue-700 hover:bg-gray-300 rounded">
+                Meet Laura
               </Link>
             </li>
 
@@ -156,7 +156,26 @@ const Navbar = () => {
                       Anxiety & Depression
                     </Link>
                   </li>
-
+                  <li>
+                    <Link
+                      href="/autism"
+                      className="block px-3 py-2 text-base text-gray-800 rounded hover:bg-gray-100"
+                      role="menuitem"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      Autism & Neurodiversity
+                    </Link>
+                  </li>
+                                    <li>
+                    <Link
+                      href="/inclusive-care"
+                      className="block px-3 py-2 text-base text-gray-800 rounded hover:bg-gray-100"
+                      role="menuitem"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      Inclusive Care (LGBTQ + LDS + Everyone)
+                    </Link>
+                  </li>
 
 
                   <li>
@@ -170,26 +189,15 @@ const Navbar = () => {
                     </Link>
                   </li>
 
-                    <li>
+                  <li>
                     <Link
-                      href="/autism"
+                      href="/schzophrenia"
                       className="block px-3 py-2 text-base text-gray-800 rounded hover:bg-gray-100"
                       role="menuitem"
                       onClick={() => setMenuOpen(false)}
                     >
-                      Autism & Neurodiversity
+                      Schizophrenia
                     </Link>
-                    </li>
-                    <li>
-                    <Link
-                      href="/inclusive-care"
-                      className="block px-3 py-2 text-base text-gray-800 rounded hover:bg-gray-100"
-                      role="menuitem"
-                      onClick={() => setMenuOpen(false)}
-                    >
-                      Inclusive Care (LGBTQ + LDS + Everyone)
-                    </Link>
-                  
                   </li>
                   
                 </ul>

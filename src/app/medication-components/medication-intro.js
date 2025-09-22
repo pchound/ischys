@@ -26,6 +26,14 @@ const Intro = () => {
                 “The Right Medication Can Change Everything.”
             </h1>
 
+                <Image
+                src="/pill.png"
+                alt="pill"
+                width={200}
+                height={200}
+                className="mx-auto w-40"
+                />
+
             <div className="max-w-4xl mx-auto px-5 pt-3">
                 <p className='text-[#0f0b0a]'
                     style={{
