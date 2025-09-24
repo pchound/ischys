@@ -16,7 +16,7 @@ const Intro = () => {
         />
 
         <h1 className="text-3xl md:text-3xl font-bold drop-shadow-xl text-center pt-5">
-          Laura Jane
+          Laura Jane Test
         </h1>
 
         <p className="text-[#88695e] font-bold drop-shadow-xl text-center">
