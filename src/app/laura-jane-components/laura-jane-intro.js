@@ -8,7 +8,7 @@ const Intro = () => {
     <>
       <div className="text-[#59433b] bg-[#f5edce] p-10 rounded-2xl h-full max-w-7xl mx-auto">
         <Image
-          src="/sample-smile.jpg"
+          src="/laura-garner.jpg"
           alt="Anxiety Scribble"
           width={400}
           height={400}

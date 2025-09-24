@@ -29,10 +29,15 @@ const Section1 = () => {
              }}>
                 Not sure where to start? Take the free quiz to identify your top challenges and get personalized recommendations.               
             </p>
+
+                <p className="text-xs text-gray-500 md:w-4xl text-center"
+               >
+                    This quiz is not a diagnostic tool. It is only for informational purposes and to help guide you to the right resources.               
+                </p>
             <br></br>
         <Link href="/quiz">
             <button className="bg-white text-black font-semibold py-2 px-6 rounded-xl shadow hover:bg-gray-100 transition cursor-pointer">
-                Book Now
+                Take quiz
             </button>
         </Link>
         </div>

@@ -1,18 +1,19 @@
 "use client";
 
 import React, { useEffect, useMemo, useState } from "react";
-import type { QuestionsResponse, QuizQuestion } from "../quiz-types/quiz";
+import type { QuestionsResponse, QuizQuestion } from "../depression-quiz-types/quiz";
 
 import { jsPDF } from "jspdf";
 
-type Answers = Record<string, "yes" | "sometimes" | "no" | undefined>;
+type Answers = Record<string, "Not at all" | "Several days" | "More than half the days" | "Nearly every day" | undefined>;
 
 export default function Quiz() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [meta, setMeta] = useState<Pick<QuestionsResponse, "title" | "intro">>({
+  const [meta, setMeta] = useState<Pick<QuestionsResponse, "title" | "intro" | "disclaimer">>({
     title: "",
     intro: "",
+    disclaimer: "",
   });
   const [questions, setQuestions] = useState<QuizQuestion[]>([]);
   const [answers, setAnswers] = useState<Answers>({});
@@ -23,11 +24,11 @@ export default function Quiz() {
     (async () => {
       try {
         setLoading(true);
-        const res = await fetch("/api/questions", { cache: "no-store" });
+        const res = await fetch("/api/depression-questions", { cache: "no-store" });
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const data: QuestionsResponse = await res.json();
         if (!active) return;
-        setMeta({ title: data.title, intro: data.intro });
+        setMeta({ title: data.title, intro: data.intro, disclaimer: data.disclaimer });
         setQuestions(data.questions);
         // initialize answers as undefined
         const start: Answers = {};
@@ -48,9 +49,10 @@ export default function Quiz() {
   const totalScore = useMemo(() => {
     return questions.reduce((sum, q) => {
       const a = answers[q.id];
-      if (a === "yes") return sum + 2;
-      if (a === "sometimes") return sum + 1;
-      return sum; // no or unanswered = 0
+      if (a === "Nearly every day") return sum + 3;
+      if (a === "More than half the days") return sum + 2;
+      if (a === "Several days") return sum + 1;
+      return sum; // not at all or unanswered = 0
     }, 0);
   }, [answers, questions]);
 
@@ -66,32 +68,51 @@ export default function Quiz() {
   const bucket = useMemo(() => {
     // Max score: 6 questions * 2 = 12
     if (!completion.allAnswered) return null;
-    if (totalScore >= 8)
+
+
+    if (totalScore >= 19)
       return {
-        label: "Mostly Yes",
-        summary: "You may be stuck in fight/flight mode.",
+        label: "Severe",
+        summary: ".",
         suggestion:
-          "Try this 5-minute diaphragmatic breathing: inhale 4s, exhale 6s, repeat for 20 cycles.",
-        cta: "Download a simple breathing guide in your PDF.",
+          "",
+          cta: "Severe",
       };
-    if (totalScore >= 4)
+    if (totalScore >= 14)
       return {
-        label: "Mostly Sometimes",
-        summary: "You may be shifting between survival and regulation.",
+        label: "Moderately Severe",
+        summary: ".",
         suggestion:
-          "Use a daily ‘grounding stack’: 30s cold water splash, 2 min of box breathing, 5 min walk.",
-        cta: "Get the ‘5 Rituals to Calm Anxiety’ in your PDF.",
+          "",
+          cta: "Moderately Severe",
+      };
+
+      if (totalScore >= 9)
+      return {
+        label: "Moderate",
+        summary: ".",
+        suggestion:
+          "",
+          cta: "Moderate",
+      };
+      if (totalScore >= 4)
+      return {
+        label: "Mild",
+        summary: ".",
+        suggestion:
+          "",
+          cta: "Mild",
       };
     return {
-      label: "Mostly No",
-      summary: "Your system is generally regulated—nice!",
+      label: "Minimal",
+      summary: "",
       suggestion:
-        "Keep it up: keep consistent sleep, sunlight before screens, and 10-minute walks after meals.",
-      cta: "Your PDF includes a quick maintenance checklist.",
+        "",
+        cta: "Minimal",
     };
   }, [completion.allAnswered, totalScore]);
 
-  function updateAnswer(qid: string, val: "yes" | "sometimes" | "no") {
+  function updateAnswer(qid: string, val: "Not at all" | "Several days" | "More than half the days" | "Nearly every day" ) {
     setAnswers((prev) => ({ ...prev, [qid]: val }));
   }
 
@@ -119,9 +140,9 @@ export default function Quiz() {
     line("Personalized Results", 14, 6, true);
 
     // Score summary
-    line(`Total Score: ${totalScore} / ${questions.length * 2}`, 12, 4, true);
+    line(`Total Score: ${totalScore} / ${questions.length * 3}`, 12, 4, true);
     line(`Result: ${bucket.label}`, 12, 6, true);
-    line(bucket.summary, 12, 6);
+    //line(bucket.summary, 12, 6);
 
     // Suggestions
     line("Suggested Next Step:", 12, 4, true);
@@ -161,6 +182,7 @@ export default function Quiz() {
           <header className="mb-6">
             <h1 className="text-black text-2xl font-bold" >{meta.title}</h1>
             <p className="text-black mt-1">{meta.intro}</p>
+            <p className="text-black mt-1 text-sm italic">{meta.disclaimer}</p>
           </header>
 
           <form onSubmit={handleSubmit} className="space-y-6">
@@ -217,7 +239,7 @@ export default function Quiz() {
 
           {submitted && completion.allAnswered && bucket && (
             <div className="mt-8 rounded-xl border p-5 text-black">
-              <h2 className="text-xl font-semibold mb-2">Your result</h2>
+              <h2 className="text-xl font-semibold mb-2 ">Your result</h2>
               <p className="mb-1">
                 <span className="font-medium">{bucket.label}</span> — {bucket.summary}
               </p>
