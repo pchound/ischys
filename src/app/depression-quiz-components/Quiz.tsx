@@ -73,7 +73,7 @@ export default function Quiz() {
     if (totalScore >= 19)
       return {
         label: "Severe",
-        summary: ".",
+        summary: "If you are suicidal or in crisis, please seek help immediately by calling 988 or going to the nearest emergency room. Then please reach out through Ischys Mental Wellness for support and medication management.",
         suggestion:
           "",
           cta: "Severe",
@@ -81,7 +81,7 @@ export default function Quiz() {
     if (totalScore >= 14)
       return {
         label: "Moderately Severe",
-        summary: ".",
+        summary: "If you are suicidal or in crisis, please seek help immediately by calling 988 or going to the nearest emergency room. Then please reach out through Ischys Mental Wellness for support and medication management.",
         suggestion:
           "",
           cta: "Moderately Severe",
@@ -90,7 +90,7 @@ export default function Quiz() {
       if (totalScore >= 9)
       return {
         label: "Moderate",
-        summary: ".",
+        summary: "Your results suggest that you may be experiencing moderate symptoms of depression. This can affect your daily life, energy, and motivation. You are not alone—many people go through similar challenges. It may help to reach out to Ischy’s for professional support. If your symptoms increase or you ever feel like you might be in crisis, please seek help immediately by calling or texting 988 (in the U.S.) or contacting your local emergency number.",
         suggestion:
           "",
           cta: "Moderate",
@@ -98,14 +98,14 @@ export default function Quiz() {
       if (totalScore >= 4)
       return {
         label: "Mild",
-        summary: ".",
+        summary: "Your results suggest that you may be experiencing mild symptoms of depression. While these feelings may not always interfere with daily life, they are still important to pay attention to. Practicing healthy habits—like regular sleep, exercise, and staying socially connected—may help improve your mood. If your symptoms persist, get worse, or begin to affect your daily functioning, consider reaching out to Ischys for guidance. Remember, even mild symptoms deserve care and attention.",
         suggestion:
           "",
           cta: "Mild",
       };
     return {
       label: "Minimal",
-      summary: "",
+      summary: "Your results suggest that you are currently experiencing little to no symptoms of depression. This is a great sign of strong mental health. Keep practicing the habits, routines, and connections that support your well-being. Everyone’s mental health can shift over time, so it’s helpful to check in with yourself regularly. If you ever notice changes in your mood or daily functioning, don’t hesitate to reach out for support.",
       suggestion:
         "",
         cta: "Minimal",
