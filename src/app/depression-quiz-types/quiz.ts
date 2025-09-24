@@ -13,5 +13,6 @@ export type QuizQuestion = {
 export type QuestionsResponse = {
   title: string;
   intro: string;
+  disclaimer: string;
   questions: QuizQuestion[];
 };
