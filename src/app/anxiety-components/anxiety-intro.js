@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Image from 'next/image';
-
+import Link from 'next/link';
 
 const Intro = () => {
 
@@ -95,8 +95,35 @@ What it can look like: withdrawal from friends, sleep/appetite changes, irritabi
 
 
             </div>
+            <br></br><br></br>
             </div>
+
+            <br></br>
+
+
+        <div className="flex flex-col items-center justify-center z-2 ml-5 mr-5 pt-10" >
+            <p className="text-4xl text-gray-500 md:w-4xl text-center"
+            style={{ fontFamily: '"Alumni Sans Pinstripe", sans-serif',
+                fontWeight: 700
+             }}>
+                Is your teen depressed? Take the free quiz to identify their top challenges and get personalized recommendations.           
+            </p>
+<br></br>
+                <p className="text-xs text-gray-500 md:w-4xl text-center"
+               >
+                    This quiz is not a diagnostic tool. It is only for informational purposes and to help guide you to the right resources.               
+                </p>
+            <br></br>
+            <Link href="/depression-quiz">
+                <button className="bg-white text-black font-semibold py-2 px-6 rounded-xl shadow hover:bg-gray-100 transition cursor-pointer">
+                    Take quiz
+                </button>
+            </Link>
+            <br></br>
+        </div>
+        
             </div>
+            
 
     );
 };

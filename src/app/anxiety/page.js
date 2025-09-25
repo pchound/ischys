@@ -9,6 +9,7 @@ export default function Home() {
         >
             <Header />
             <Intro />
+            <br></br>
             <Footer />
         </main>
     );
