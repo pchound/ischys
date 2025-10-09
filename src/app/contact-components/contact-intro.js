@@ -26,6 +26,8 @@ const ContactIntro = () => {
             >
                 Ready to start your journey?
             </h1>
+
+            
         </div>
     );
 };
