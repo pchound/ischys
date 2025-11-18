@@ -38,7 +38,7 @@ export async function sendEmail({ fname, lname, phone, email, message }) {
   try {
     const { data, error } = await resend.emails.send({
       from: fromEmail,
-      to: 'laurajanehyte@protonmail.com',
+      to: 'ischyswellness@protonmail.com',
       subject: `General Inquiry from ${fname} ${lname}`,
       html: `
         <h1>New message from ${email}</h1>
