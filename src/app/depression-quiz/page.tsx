@@ -1,3 +1,4 @@
+"use client";
 import Quiz from "../depression-quiz-components/Quiz";
 import React, { useState, useEffect } from "react";
 
