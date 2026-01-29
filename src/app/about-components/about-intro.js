@@ -70,7 +70,7 @@ const AboutIntro = () => {
                     }}
                 > Call to book:<br></br> (801) 796-2552
                 <br></br>
-                or book online <a href="/contact" className="text-blue-500 underline">here</a>.
+                or book online <a href="https://laura-jane-hyte-garner7671.clientsecure.me/" className="text-blue-500 underline">here</a>.
                 </p>
                 
                

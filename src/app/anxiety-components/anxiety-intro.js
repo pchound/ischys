@@ -106,7 +106,7 @@ What it can look like: withdrawal from friends, sleep/appetite changes, irritabi
             style={{ fontFamily: '"Alumni Sans Pinstripe", sans-serif',
                 fontWeight: 700
              }}>
-                Is your teen depressed? Take the free quiz to identify their top challenges and get personalized recommendations.           
+                Are you a teen who&apos;s depressed? Take the free quiz to identify their top challenges and get personalized recommendations.           
             </p>
 <br></br>
                 <p className="text-xs text-gray-500 md:w-4xl text-center"
