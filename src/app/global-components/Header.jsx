@@ -210,7 +210,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/contact" className="block px-3 py-2 text-lg text-black hover:text-blue-700 hover:bg-gray-300 rounded">
+              <Link href="https://laura-jane-hyte-garner7671.clientsecure.me" className="block px-3 py-2 text-lg text-black hover:text-blue-700 hover:bg-gray-300 rounded">
                 Book Now
               </Link>
             </li>

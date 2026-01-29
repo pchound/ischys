@@ -45,7 +45,7 @@ const VideoComponent = () => {
                     {/* Buttons Row */}
                     <div className="flex space-x-4 mt-2">
 
-                        <Link href="/contact">
+                        <Link href="https://laura-jane-hyte-garner7671.clientsecure.me">
                             <button className="bg-white text-black font-semibold py-2 px-6 rounded-xl shadow hover:bg-gray-100 transition cursor-pointer">
                                 Book Now
                             </button>
