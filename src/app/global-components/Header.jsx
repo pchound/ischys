@@ -96,7 +96,7 @@ const Navbar = () => {
 
             <li>
               <Link href="/laura-jane" className="block px-3 py-2 text-lg text-black hover:text-blue-700 hover:bg-gray-300 rounded">
-                Meet Laura
+                About Laura
               </Link>
             </li>
 
@@ -110,7 +110,7 @@ const Navbar = () => {
                 aria-expanded={servicesOpen}
                 aria-controls="services-menu"
               >
-                <span>Services</span>
+                <span>What I treat</span>
                 <svg
                   className={`ml-2 h-4 w-4 transition-transform ${servicesOpen ? 'rotate-180' : ''}`}
                   viewBox="0 0 20 20"
