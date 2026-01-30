@@ -189,7 +189,7 @@ const Navbar = () => {
                     </Link>
                   </li>
 
-                  <li>
+                 {/*} <li>
                     <Link
                       href="/schzophrenia"
                       className="block px-3 py-2 text-base text-gray-800 rounded hover:bg-gray-100"
@@ -199,7 +199,7 @@ const Navbar = () => {
                       Schizophrenia
                     </Link>
                   </li>
-                  
+                  */}
                 </ul>
               </div>
             </li>
