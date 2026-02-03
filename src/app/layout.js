@@ -61,6 +61,30 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        {/* JSON-LD Schema Markup for SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "MedicalClinic",
+              name: "Ischys Wellness",
+              url: "https://www.ischysmentalwellness.com/",
+              logo: "https://www.ischysmentalwellness.com/logo.png",
+              description:
+                "Ischys Wellness offers compassionate mental health care, therapy, and counseling for individuals, teens, and families in a safe, inclusive environment.",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Your Street Address",
+                addressLocality: "Your City",
+                addressRegion: "Your State",
+                postalCode: "Your Zip",
+                addressCountry: "Your Country"
+              },
+              telephone: "Your Phone Number"
+            })
+          }}
+        />
         {/* Google Tag Manager */}
         <Script id="gtm-init" strategy="afterInteractive">
           {`
