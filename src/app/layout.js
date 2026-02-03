@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Ischys Wellness",
   description:
-    "Ischys Wellness offers compassionate mental health care, therapy, and counseling for individuals, teens, and families. Our experienced team provides support for anxiety, depression, and emotional well-being in a safe, inclusive environment.",
+    "Ischys Wellness offers compassionate mental health care, therapy, and counseling for individuals, teens, and families in a safe, inclusive environment.",
   keywords: [
     "mental health",
     "therapy",
@@ -76,11 +76,7 @@ export default function RootLayout({ children }) {
           `}
         </Script>
 
-        {/* Meta Description for SEO */}
-        <meta
-          name="description"
-          content="Ischys Wellness offers compassionate mental health care, therapy, and counseling for individuals, teens, and families. Our experienced team provides support for anxiety, depression, and emotional well-being in a safe, inclusive environment."
-        />
+        {/* Meta Description for SEO removed (handled by Next.js metadata API) */}
         {/* SEO Meta Tags */}
         <meta name="keywords" content="mental health, therapy, counseling, wellness, anxiety, depression, teens, families, inclusive care" />
         <meta name="robots" content="index, follow" />

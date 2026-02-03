@@ -35,10 +35,10 @@ const VideoComponent = () => {
                 <div className="flex flex-col items-center space-y-4 px-4"
 
                 >
-                    <h1 className="text-white text-2xl md:text-4xl font-bold drop-shadow-xl text-center"
+                    <h2 className="text-white text-2xl md:text-4xl font-bold drop-shadow-xl text-center"
                     >
                         You’re Not Broken—You’re Overloaded.<br></br> Let’s Bring You Back to Calm.
-                    </h1>
+                    </h2>
                     <p className="text-white md:text-sm drop-shadow-xl text-center md:w-xl">
                         Expert Psychiatric Care for Anxiety, Depression, ADHD & Trauma — In-person and Telehealth in Utah.
                     </p>
