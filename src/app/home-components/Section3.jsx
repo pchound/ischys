@@ -28,19 +28,19 @@ const Section3 = () => {
             style={{ fontFamily: '"Quicksand", sans-serif' }}
         >
 
-            <h1 data-aos="fade" data-aos-duration="1000"
+            <h2 data-aos="fade" data-aos-duration="1000"
              className="text-3xl md:text-4xl  drop-shadow-xl mb-4 text-center pb-10" >
                 At Ischys Wellness, we can help with:
-            </h1>
+            </h2>
 
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 items-center" >
 
 
                 {/*Section 1 */}
                 <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                    <h1 className="text-3xl md:text-3xl drop-shadow-xl mb-4 text-center">
+                    <h2 className="text-3xl md:text-3xl drop-shadow-xl mb-4 text-center">
                         Anxiety
-                    </h1>
+                    </h2>
 
                     <Image
                         src="/anxiety-scribble.png"
@@ -55,9 +55,9 @@ const Section3 = () => {
 
                 {/*Section 2 */}
                 <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                    <h1 className="text-3xl md:text-3xl drop-shadow-xl mb-4 text-center">
+                    <h2 className="text-3xl md:text-3xl drop-shadow-xl mb-4 text-center">
                         Depression
-                    </h1>
+                    </h2>
 
                     <Image
                         src="/depression-cloud.png"
@@ -72,9 +72,9 @@ const Section3 = () => {
                 {/*Section 3 */}
                 <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 
-                    <h1 className="text-3xl md:text-3xl  drop-shadow-xl mb-4 text-center">
+                    <h2 className="text-3xl md:text-3xl  drop-shadow-xl mb-4 text-center">
                         Relationships
-                    </h1>
+                    </h2>
 
                     <Image
                         src="/relationships.png"
@@ -88,9 +88,9 @@ const Section3 = () => {
                 {/*Section 4 */}
                 <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 
-                    <h1 className="text-3xl md:text-3xl drop-shadow-xl mb-4 text-center">
+                    <h2 className="text-3xl md:text-3xl drop-shadow-xl mb-4 text-center">
                         Addiction
-                    </h1>
+                    </h2>
 
                     <Image
                         src="/addiction.png"
@@ -103,10 +103,10 @@ const Section3 = () => {
 
             <br></br><br></br>
             </div>
-                <h1
+                <h2
                     className="text-3xl md:text-4xl  drop-shadow-xl mb-4 text-center " >
                     And many more:
-                </h1>
+                </h2>
 
                     <div className=" flex justify-center">
                         <button className="bg-white text-black font-semibold py-2 px-6 rounded-xl shadow hover:bg-gray-100 transition cursor-pointer">

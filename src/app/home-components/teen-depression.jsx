@@ -17,14 +17,14 @@ const Section1 = () => {
                 
                 {/* Text Section */}
                 <div data-aos="fade-right" data-aos-duration="800">
-                     <h1 className="text-[#88695e] text-5xl font-bold drop-shadow-xl mb-4"
+                     <h2 className="text-[#88695e] text-5xl font-bold drop-shadow-xl mb-4"
                 style={{
                     fontFamily: '"Quicksand", sans-serif',
                     fontWeight: 300
                 }}
             >
                         1 in 4 teens suffer from depression
-                    </h1>
+                    </h2>
                     <p className="text-lg text-gray-800">
                         Depression in adolescence is rising, and early support makes all the difference.
                     </p>

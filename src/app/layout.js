@@ -32,11 +32,11 @@ export const metadata = {
     title: "Ischys Wellness",
     description:
       "Ischys Wellness offers compassionate mental health care, therapy, and counseling for individuals, teens, and families. Our experienced team provides support for anxiety, depression, and emotional well-being in a safe, inclusive environment.",
-    url: "https://www.yoursite.com/",
+    url: "https://www.ischysmentalwellness.com/",
     siteName: "Ischys Wellness",
     images: [
       {
-        url: "https://www.yoursite.com/og-image.jpg",
+        url: "https://www.ischysmentalwellness.com/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Ischys Wellness Clinic",
@@ -50,10 +50,10 @@ export const metadata = {
     title: "Ischys Wellness",
     description:
       "Ischys Wellness offers compassionate mental health care, therapy, and counseling for individuals, teens, and families. Our experienced team provides support for anxiety, depression, and emotional well-being in a safe, inclusive environment.",
-    images: ["https://www.yoursite.com/twitter-image.jpg"],
+    images: ["https://www.ischysmentalwellness.com/twitter-image.jpg"],
   },
   alternates: {
-    canonical: "https://www.yoursite.com/",
+    canonical: "https://www.ischysmentalwellness.com/",
   },
 };
 
@@ -80,20 +80,20 @@ export default function RootLayout({ children }) {
         {/* SEO Meta Tags */}
         <meta name="keywords" content="mental health, therapy, counseling, wellness, anxiety, depression, teens, families, inclusive care" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.yoursite.com/" />
+        <link rel="canonical" href="https://www.ischysmentalwellness.com/" />
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="Ischys Wellness" />
         <meta property="og:description" content="Ischys Wellness offers compassionate mental health care, therapy, and counseling for individuals, teens, and families. Our experienced team provides support for anxiety, depression, and emotional well-being in a safe, inclusive environment." />
-        <meta property="og:url" content="https://www.yoursite.com/" />
+        <meta property="og:url" content="https://www.ischysmentalwellness.com/" />
         <meta property="og:site_name" content="Ischys Wellness" />
-        <meta property="og:image" content="https://www.yoursite.com/og-image.jpg" />
+        <meta property="og:image" content="https://www.ischysmentalwellness.com/og-image.jpg" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Ischys Wellness" />
         <meta name="twitter:description" content="Ischys Wellness offers compassionate mental health care, therapy, and counseling for individuals, teens, and families. Our experienced team provides support for anxiety, depression, and emotional well-being in a safe, inclusive environment." />
-        <meta name="twitter:image" content="https://www.yoursite.com/twitter-image.jpg" />
+        <meta name="twitter:image" content="https://www.ischysmentalwellness.com//twitter-image.jpg" />
           {/*End Google Tag Manager*/}
 
         {/* Favicon */}
