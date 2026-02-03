@@ -130,6 +130,19 @@ export default function RootLayout({ children }) {
             style={{ display: 'none', visibility: 'hidden' }}
           ></iframe>
         </noscript>
+                  {/* Google Ads (AW-17549617803) */}
+                  <Script
+                    src="https://www.googletagmanager.com/gtag/js?id=AW-17549617803"
+                    strategy="afterInteractive"
+                  />
+                  <Script id="aw-init" strategy="afterInteractive">
+                    {`
+                      window.dataLayer = window.dataLayer || [];
+                      function gtag(){dataLayer.push(arguments);}
+                      gtag('js', new Date());
+                      gtag('config', 'AW-17549617803');
+                    `}
+                  </Script>
         {/* End Google Tag Manager (noscript) */}
 
         <Script src="//code.tidio.co/epnjvabie0mjl8vkuqgtcz8zgmbjzfr1.js" strategy="afterInteractive" />
