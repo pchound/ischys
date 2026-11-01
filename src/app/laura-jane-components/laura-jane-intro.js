@@ -16,12 +16,16 @@ const Intro = () => {
         />
 
         <h1 className="text-3xl md:text-3xl font-bold drop-shadow-xl text-center pt-5">
-          Laura Jane
+          Laura Jane Hyte-Garner
         </h1>
 
+        <h2 className="text-2xl md:text-2xl font-bold drop-shadow-xl text-center pt-5">
+          MSN, APRN, PMHNP-BC
+        </h2>
+
         <p className="text-[#88695e] font-bold drop-shadow-xl text-center">
-          Highland Office <b></b>
-          Supervising Therapist
+          Psychiatric Mental Health Nurse Practitioner<b></b>
+          
         </p>
 
         <Link href="/">
